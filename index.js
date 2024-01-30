@@ -40,12 +40,13 @@ function clear(){
     guessesElement.textContent = ("Intentos: " + String(guesses));
     guessElement.value = "";
     previousGuessesElement.textContent=guessList;
+    resultElement.textContent = result;
 }
 
 function reset(){
     num = Math.floor(Math.random() * 100+1);
     guesses = 0;
-    result = '';
-    let guessList = 'Intentos anteriores: ';
+    result = "";
+    guessList = 'Intentos anteriores: ';
     clear();
 }
