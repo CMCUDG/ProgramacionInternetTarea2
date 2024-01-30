@@ -12,11 +12,14 @@ const previousGuessesElement = document.querySelector('.js-previousGuesses');
 reset()
 
 function buttonClicked(){
+    if(result == 'Correcto'){
+        return;
+    }
 
     if(guesses > 9){
-        result = 'Se acabaron los intentos'
+        result = 'Se acabaron los intentos';
         resultElement.textContent = result;
-        return
+        return;
     }
 
     let guess = Number(guessElement.value);
