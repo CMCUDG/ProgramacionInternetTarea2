@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="grid">
+    <div></div>
+    <div>
+      <h1>Juego de adivina el número</h1>
+      <p>El número se encuentra entre 1 y 100</p>
+
+      <div class="main">
+
+        <input type="text" class="js-guess">
+        <button class="js-buttonGuess" onclick="buttonClicked();">Adivinar</button>
+
+        <p class = "js-result"></p>
+        <p class = "js-guesses">Intentos: 0</p>
+        <p class="js-previousGuesses">Intentos anteriores: </p>
+
+
+        <button class="js-buttonReset" onclick="reset()">Reiniciar</button>
+      </div>
+    </div>
+    <div></div>
+  </div>
+
+
+  
+  <script src="index.js"></script>
+</body>
+</html>
+
+
+  <!-- 
+    <div class='grid'>
+    <div class="grid-odd">
+      <p>0</p>
+    </div>
+    <div class="grid-even">
+      <p>1</p>
+    </div>
+    <div class="grid-odd">
+      <p>2</p>
+    </div>
+  </div>
+ -->
+  
